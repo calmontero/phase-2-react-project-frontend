@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Header from './components/Header/Header';
 import HeroesContainer from './components/HeroesContainer/HeroesContainer';
+import HeroesForm from "./components/HeroesForm/HeroesForm";
 
 function App() {
   const [hero, setHero] = useState([]);
@@ -13,10 +14,21 @@ function App() {
       .then((heroData) => setHero(heroData))
   ),[]);
 
+  function handleAddHero(newHero) {
+    const updatedHeroes = [...hero, newHero];
+    setHero(updatedHeroes);
+  }
+
+  function handleDeleteHero(id) {
+    const updatedHeroes = hero.filter((heroList) => heroList.id !== id);
+    setHero(updatedHeroes);
+  }
+
   return (
     <div className="App">
       <Header />
-      <HeroesContainer heroesList={hero} />
+      <HeroesForm onAddHero={handleAddHero} />
+      <HeroesContainer heroesList={hero} onDeleteHero={handleDeleteHero} />
     </div>
   );
 }
