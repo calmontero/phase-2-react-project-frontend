@@ -93,6 +93,12 @@ function HeroesForm({ onAddHero }) {
                 value={form.image}
                 onChange={updateField}
                 />
+
+                <select >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+
                 <input
                 type="submit"
                 name="submit"

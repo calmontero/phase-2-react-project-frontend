@@ -5,7 +5,16 @@ import HeroesContainer from './components/HeroesContainer/HeroesContainer';
 import HeroesForm from "./components/HeroesForm/HeroesForm";
 
 function App() {
+  const [showForm, setShowForm] = useState(false);
   const [hero, setHero] = useState([]);
+
+  function handleClick() {
+    setShowForm((showForm) => !showForm);
+  }
+
+  function handleHide() {
+    setShowForm(false);
+  }
 
   //Recover the data
   useEffect(() => (
@@ -27,7 +36,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HeroesForm onAddHero={handleAddHero} />
+      {showForm ? <HeroesForm onAddHero={handleAddHero} /> : null}
+      <div className="buttonContainer">
+        <button onClick={handleClick}>More</button>
+        <button onClick={handleHide} >Less</button>
+      </div>
       <HeroesContainer heroesList={hero} onDeleteHero={handleDeleteHero} />
     </div>
   );

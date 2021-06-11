@@ -1,13 +1,18 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import './HeroesCardDetails.css';
 
 function HeroesCardDetails({ hero }) {
-    const params = useParams();
-    console.log(params);
-
     return (
-        <div >
-            <h3>{hero[params.id].name}</h3>
+        <div className="hero-card" >
+            <h2>{hero.name}</h2>
+            <img
+                src={hero.image}
+                alt={hero.name}
+                className="hero-avatar"
+            />
+            <p>Real Name</p>
+            <p>Publisher: {hero.publisher}</p>
+            <p>Alignment: {hero.alignment}</p>
         </div>
     );
 }

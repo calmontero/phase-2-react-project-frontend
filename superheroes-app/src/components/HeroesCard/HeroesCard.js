@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import './HeroesCard.css';
 
-function HeroesCard({ heroesList, onDeleteHero }) {
-    const { id, name, image, isFavorite } = heroesList;
+function HeroesCard({ heroesList, onDeleteHero, onDetailsHero }) {
+    const { id, name, realname, image, isFavorite, publisher, alignment } = heroesList;
     const [isFav, setFav] = useState(isFavorite);
 
-    function handleDeleteClick() {
+    function handleDeleteClick(e) {
         fetch(`http://localhost:3000/heroes/${id}`, {
             method: "DELETE",
           });
@@ -13,25 +13,32 @@ function HeroesCard({ heroesList, onDeleteHero }) {
           onDeleteHero(id);
     }
 
-    function handleUpdateClick() {
-        console.log("Update");
-    }
+    function handleUpdateClick(e) {
+        e.stopPropagation()
+        setFav(!isFav);
+    } 
+/*
+    function handleDetailsClick() {
+        onDetailsHero(id);
+    }*/
 
     return (
-        <div className="hero-card" >
+        <div className="card" >
             <h2>{name}</h2>
             <img
                 src={image}
                 alt={name}
                 className="hero-avatar"
             />
+            <div >Real Name: {realname} <br/> Publisher: {publisher} <br/> Alignment: {alignment} </div>
             <div className="details">
                 {isFav ? (
-                    <button onClick={() => setFav(false)} className="emoji-button favorite active">★</button>
+                    <button onClick={handleUpdateClick} className="emoji-button favorite active">★</button>
                     ) : (
-                    <button onClick={() => setFav(true)} className="emoji-button favorite">☆</button>
+                    <button onClick={handleUpdateClick} className="emoji-button favorite">☆</button>
                     )}
                     <button onClick={handleDeleteClick} className="emoji-button delete">🗑</button>
+                    {/*<button onClick={handleDetailsClick}>Details</button>*/}
             </div>
             
         </div>

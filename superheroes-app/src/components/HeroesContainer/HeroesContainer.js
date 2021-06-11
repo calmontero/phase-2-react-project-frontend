@@ -1,24 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 //import { Route, useRouteMatch } from "react-router-dom";
 import HeroesCard from "../HeroesCard/HeroesCard";
 import HeroesCardDetails from "../HeroesCardDetails/HeroesCardsDetails";
 
-function HeroesContainer({ heroesList,onDeleteHero }) {
+function HeroesContainer({ heroesList, onDeleteHero }) {
+    const [heroFilter, setHeroFilter] = useState(null);
 
     function populateList() {
         return heroesList.map((heroes) => (
-            <HeroesCard heroesList={heroes} key={heroes.id} onDeleteHero={onDeleteHero} />
+            <HeroesCard heroesList={heroes} 
+                key={heroes.id} 
+                onDeleteHero={onDeleteHero} 
+                onDetailsHero={handleViewHero}
+            />
         ));
     }
-/*
+
     function showHeroDetails(id) {
-        return heroesList.find(h => h.id === 3);
+        const hero = heroesList.find(h => h.id === id)
+            return <HeroesCardDetails hero={hero} />  
     }
-    console.log(showHeroDetails());*/
+
+    function handleViewHero(id) {
+        if(heroFilter === null) {
+            setHeroFilter(id);
+        } else {
+            setHeroFilter(null);
+        }
+    }
+
     return (
         <div id="hero-collection">
-            {populateList()}
-
+            {(heroFilter === null) ? populateList() : showHeroDetails(heroFilter) }
         </div>
     );
 }
