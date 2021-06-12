@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Input from '@material-ui/core/Input';
 
 function HeroesForm({ onAddHero }) {
     const[form, setForm] = useState({
@@ -12,13 +13,14 @@ function HeroesForm({ onAddHero }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("http://localhost:3000/heroes", {
+        fetch("https://json-server-pj-backend.herokuapp.com/heroes", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
             name: form.name,
+            realname: form.realname,
             publisher: form.publisher,
             alignment: form.alignment,
             gender: form.gender,
@@ -39,13 +41,9 @@ function HeroesForm({ onAddHero }) {
 
     return (
         <div className="container">
-            <form className="add-hero-form" onSubmit={handleSubmit} >
-                <input
-                type="text"
-                name="name"
-                placeholder="Enter a hero's name..."
-                className="input-text"
-                value={form.name}
+            <form  noValidate autoComplete="off" onSubmit={handleSubmit} >
+                <Input defaultValue="Enter a hero's name..." inputProps={{ 'aria-label': form.name }}
+
                 onChange={updateField}
                 />
                 
@@ -93,11 +91,6 @@ function HeroesForm({ onAddHero }) {
                 value={form.image}
                 onChange={updateField}
                 />
-
-                <select >
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
 
                 <input
                 type="submit"
