@@ -37,7 +37,8 @@ function HeroesCard({ heroesList, onDeleteHero }) {
                 alt={name}
                 className="hero-avatar"
             />
-            <div >Real Name: {realname} <br/> Publisher: {publisher} <br/> Alignment: {alignment} </div>
+            <div ><strong>Real Name:</strong> {realname} <br/> <strong>Publisher:</strong> {publisher} <br/> <strong>Alignment:</strong> {alignment} </div>
+
             <div className="details">
                 {isFav ? (
                     <button onClick={() => {handleUpdateClick(); setFav(false)}} className="emoji-button favorite active">★</button>

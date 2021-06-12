@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Input from '@material-ui/core/Input';
+import Button from '@material-ui/core/Button';
+import "./HeroesForm.css";
 
 function HeroesForm({ onAddHero }) {
     const[form, setForm] = useState({
@@ -40,64 +42,53 @@ function HeroesForm({ onAddHero }) {
       };
 
     return (
-        <div className="container">
-            <form  noValidate autoComplete="off" onSubmit={handleSubmit} >
-                <Input defaultValue="Enter a hero's name..." inputProps={{ 'aria-label': form.name }}
-
+        <div className="form">
+            <form  noValidate autoComplete="on" onSubmit={handleSubmit} >
+                <Input 
+                type="text"
+                name="name"
+                placeholder="Enter a hero's name..."
+                value={form.name}
                 onChange={updateField}
                 />
                 
-                <input
+                <Input
                 type="text"
                 name="realname"
                 placeholder="Enter a hero's real name..."
-                className="input-text"
+                className="Input-text"
                 value={form.realname}
                 onChange={updateField}
                 />
                 
-                <input
+                <Input
                 type="text"
                 name="publisher"
                 placeholder="Enter a hero's publisher..."
-                className="input-text"
+                className="Input-text"
                 value={form.publisher}
                 onChange={updateField}
                 />
                 
-                <input
+                <Input
                 type="text"
                 name="alignment"
                 placeholder="Enter a hero's alignment..."
-                className="input-text"
+                className="Input-text"
                 value={form.alignment}
                 onChange={updateField}
                 />
                 
-                <input
-                type="text"
-                name="gender"
-                placeholder="Enter a hero's gender..."
-                className="input-text"
-                value={form.gender}
-                onChange={updateField}
-                />
-                
-                <input
+                <Input
                 type="text"
                 name="image"
                 placeholder="Enter a hero's image URL..."
-                className="input-text"
+                className="Input-text"
                 value={form.image}
                 onChange={updateField}
                 />
-
-                <input
-                type="submit"
-                name="submit"
-                value="Create New Hero"
-                className="submit"
-                />
+                <br />
+                <Button type="submit"variant="outlined" color="secondary">Create Hero</Button>                
             </form>
         </div>
     );
