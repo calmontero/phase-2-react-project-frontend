@@ -1,0 +1,404 @@
+{    
+   "heroes": [
+      {
+      "id": 1,
+      "name": "Abomination",
+      "realname": "Emil Blonsky",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/1.jpg"
+      },
+      {
+      "id": 2,
+      "name": "Batman",
+      "realname": "Bruce Wayne",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
+      },
+      {
+      "id": 3,
+      "name": "Lex Luthor",
+      "realname": "Lex Luthor",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/727.jpg"
+      },
+      {
+      "id": 4,
+      "name": "Ironman",
+      "realname": "Tony Stark",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg"
+      },
+      {
+      "id": 5,
+      "name": "Ant-Man",
+      "realname": "Hank Pym",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/857.jpg"
+      },
+      {
+      "id": 6,
+      "name": "Aquaman",
+      "realname": "Orin",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/634.jpg"
+      },
+      {
+      "id": 7,
+      "name": "Atom",
+      "realname": "Albert Pratt",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/934.jpg"
+      },
+      {
+      "id": 8,
+      "name": "Bane",
+      "realname": "N/A",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg"
+      },
+      {
+      "id": 9,
+      "name": "Banshee",
+      "realname": "Sean Cassidy",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/26.jpg"
+      },
+      {
+      "id": 10,
+      "name": "Beast",
+      "realname": "Henry Philip McCoy",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/27.jpg"
+      },
+      {
+      "id": 11,
+      "name": "Black Adam",
+      "realname": "Teth-Adam",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/643.jpg"
+      },
+      {
+      "id": 12,
+      "name": "Black Manta",
+      "realname": "David",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10546.jpg"
+      },
+      {
+      "id": 13,
+      "name": "Captain America",
+      "realname": "Steve Rogers",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg"
+      },
+      {
+      "id": 14,
+      "name": "Captain Marvel",
+      "realname": "Carol Danvers",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/103.jpg"
+      },
+      {
+      "id": 15,
+      "name": "Doctor Doom",
+      "realname": "Victor von Doom",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/189.jpg"
+      },
+      {
+      "id": 16,
+      "name": "Elektra",
+      "realname": "Elektra Natchios",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/625.jpg"
+      },
+      {
+      "id": 17,
+      "name": "Superman",
+      "realname": "Clark Kent",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
+      },
+      {
+      "id": 18,
+      "name": "Wonder Woman",
+      "realname": "Diana Prince",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/807.jpg"
+      },
+      {
+      "id": 19,
+      "name": "Scarlet Witch",
+      "realname": "Wanda Maximoff",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/444.jpg"
+      },
+      {
+      "id": 20,
+      "name": "Jean Grey",
+      "realname": "Jean Grey",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/814.jpg"
+      },
+      {
+      "id": 21,
+      "name": "Black Widow",
+      "realname": "Natasha Romanoff",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/248.jpg"
+      },
+      {
+      "id": 22,
+      "name": "Harley Quinn",
+      "realname": "Harley Quinn",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/701.jpg"
+      },
+      {
+      "id": 23,
+      "name": "Poison Ivy",
+      "realname": "Pamela Isley",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/757.jpg"
+      },
+      {
+      "id": 24,
+      "name": "Mystique",
+      "realname": "Raven Darkholme",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/817.jpg"
+      },
+      {
+      "id": 25,
+      "name": "Flash",
+      "realname": "Barry Allen",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/892.jpg"
+      },
+      {
+      "id": 26,
+      "name": "Nick Fury",
+      "realname": "Nicholas Joseph Fury",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/326.jpg"
+      },
+      {
+      "id": 27,
+      "name": "Magneto",
+      "realname": "Erik Magnus Lensherr",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/12.jpg"
+      },
+      {
+      "id": 28,
+      "name": "Colossus",
+      "realname": "Piotr Nikolaievitch Rasputin",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/48.jpg"
+      },
+      {
+      "id": 29,
+      "name": "Groot",
+      "realname": "Groot",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10017.jpg"
+      },
+      {
+      "id": 30,
+      "name": "Green Lantern",
+      "realname": "Hal Jordan",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/697.jpg"
+      },
+      {
+      "id": 31,
+      "name": "Gamora",
+      "realname": "Gamora Zen Whoberi Ben Titan",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/65.jpg"
+      },
+      {
+      "id": 32,
+      "name": "John Constantine",
+      "realname": "John Constantine",
+      "publisher": "DC Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/718.jpg"
+      },
+      {
+      "id": 33,
+      "name": "Spider-Gwen",
+      "realname": "Gwen Stacy",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10507.jpg"
+      },
+      {
+      "id": 34,
+      "name": "Spider-Woman",
+      "realname": "Jessica Drew",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/481.jpg"
+      },
+      {
+      "id": 35,
+      "name": "Catwoman",
+      "realname": "Selina Kyle",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/659.jpg"
+      },
+      {
+      "id": 36,
+      "name": "Cheetah",
+      "realname": "Priscilla Rich",
+      "publisher": "DC Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/661.jpg"
+      },
+      {
+      "id": 37,
+      "name": "Ultron",
+      "realname": "Ultron",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/1339.jpg"
+      },
+      {
+      "id": 38,
+      "name": "Doctor Strange",
+      "realname": "Stephen Strange",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg"
+      },
+      {
+      "id": 39,
+      "name": "Nebula",
+      "realname": "N/A",
+      "publisher": "Marvel Comics",
+      "alignment": "bad",
+      "gender": "Female",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10632.jpg"
+      },
+      {
+      "id": 40,
+      "name": "Hulk",
+      "realname": "Bruce Banner",
+      "publisher": "Marvel Comics",
+      "alignment": "good",
+      "gender": "Male",
+      "isFavorite": false,
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg"
+      }
+    ]
+}
